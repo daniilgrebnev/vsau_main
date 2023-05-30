@@ -1,0 +1,18 @@
+@import url(../font/roboto.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: Roboto;
+}
+ul li {
+	list-style-type: none;
+}
+li.active {
+	background: #f0f1f1;
+}
+li::marker {
+	display: none;
+}
