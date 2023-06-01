@@ -1,3 +1,5 @@
+import { INavItem } from '@/interfaces'
+
 export const navItems: INavItem[] = [
 	{
 		img: '/navbar/about.png',

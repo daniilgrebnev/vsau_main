@@ -17,7 +17,7 @@ export default function RootLayout({
 	const router = usePathname()
 	return (
 		<html lang='en'>
-			<body className='flex h-[2000px] content-box overflow-x-hidden'>
+			<body className='flex content-box min-h-screen overflow-x-hidden'>
 				<div className='h-screen fixed z-40  ' style={{ width: navWidth }}>
 					{/* Navigation.tsx */}
 					<nav>
@@ -38,8 +38,8 @@ export default function RootLayout({
 					></div>
 				</div>
 
-				<main style={{ marginLeft: navWidth }} className='w-screen  bg-blue'>
-					{children}
+				<main style={{ marginLeft: navWidth }} className='w-screen'>
+					<div className='p-10'>{children}</div>
 				</main>
 			</body>
 		</html>

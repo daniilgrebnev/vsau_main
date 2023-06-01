@@ -24,7 +24,7 @@ const OpenNavbar = () => {
 				{navItems.map(item => (
 					<Link href={item.path} className=''>
 						<li className={router == item.path ? 'active' : ''}>
-							<div className='flex items-center justify-left py-2 w-2/3 mx-auto'>
+							<div className='flex items-center justify-start py-3 w-2/3 mx-auto'>
 								<Image src={item.img} alt='Logo' width={32} height={32} />
 								<p className='text-lg ml-7 leading-5 '>{item.title}</p>
 							</div>
