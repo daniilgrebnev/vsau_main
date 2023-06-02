@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -7,18 +9,10 @@ const OpenNavbar = () => {
 	const router = usePathname()
 	return (
 		<div className=' text-blue'>
-			<div className='p-[57px]  overflow-hidden flex items-center justify-between'>
-				<Image src='/Logo.png' alt='Logo' width={97} height={97} />
-				<div className='leading-5 ml-5'>
-					<p className='text-[11.5px]'>
-						Федеральное государственное бюджетное образовательное учреждение
-						высшего образования
-					</p>
-					<b className='text-[19px]'>
-						Воронежский государственный аграрный университет имени императора
-						Петра I
-					</b>
-				</div>
+			<div className='m-[57px] w-[80%] h-[97px] flex items-center justify-center '>
+				<Link href='/'>
+					<Image src='/Logo.svg' alt='Logo' width={400} height={97} />
+				</Link>
 			</div>
 			<ul>
 				{navItems.map(item => (

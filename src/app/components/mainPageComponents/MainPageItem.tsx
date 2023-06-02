@@ -12,7 +12,7 @@ const MainPageItem = ({
 }: IMainPageItem) => {
 	return (
 		<Link href={link}>
-			<div className=' bg-white mb-5 mr-5 justify-start rounded-lg flex h-[125px] w-[370px] items-center '>
+			<div className=' bg-white mb-5 mr-5 justify-start rounded-lg flex  h-[125px] w-[330px] items-center '>
 				<Image
 					src={img}
 					alt='ICON'
@@ -20,7 +20,7 @@ const MainPageItem = ({
 					height={imgHeight}
 					className='my-7 mx-3'
 				/>
-				<div className='text-blue ml-5'>
+				<div className='text-blue  px-2 ml-5'>
 					<b className=''>{title}</b>
 					<p className='text-sm'>{label}</p>
 				</div>

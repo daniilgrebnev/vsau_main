@@ -1,12 +1,15 @@
 'use client'
+import { INews } from '@/interfaces'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { newsItems } from './newsItems'
 
 const NewsMainPage = () => {
+	const [newsItem] = useState<INews[]>(newsItems)
 	return (
-		<div className='flex relative  scroll overflow-x-scroll  text-blue '>
-			{newsItems.map(item => (
+		<div className='flex relative w-[103%] z-30  scroll overflow-x-scroll  text-blue '>
+			{newsItem.map(item => (
 				<Link href='news/#' className='cursor-pointer'>
 					<div className=' mr-7 min-w-[320px] bg-white rounded-lg'>
 						<Image src='/newspic.png' alt='#' width={320} height={0} />
@@ -20,7 +23,6 @@ const NewsMainPage = () => {
 					</div>
 				</Link>
 			))}
-			<div className='min-w-[600px]  '></div>
 		</div>
 	)
 }

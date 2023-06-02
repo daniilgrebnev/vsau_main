@@ -3,6 +3,7 @@ import Image from 'next/image'
 import MainArrow from './components/MainArrow'
 import ActualityMainPage from './components/mainPageComponents/actuality/ActualityMainPage'
 import NewsMainPage from './components/mainPageComponents/news/NewsMainPage'
+import RecommendetMainPage from './components/mainPageComponents/recommendet/RecommendetMainPage'
 
 export default function Home() {
 	return (
@@ -21,7 +22,7 @@ export default function Home() {
 					<Image
 						src='/titles/small/news.png'
 						alt='ok'
-						width={166}
+						width={170}
 						height={0}
 						className='my-7'
 					/>
@@ -36,12 +37,24 @@ export default function Home() {
 				<Image
 					src='/titles/small/actuality.png'
 					alt='ok'
-					width={166}
+					width={180}
 					height={0}
 					className='my-7'
 				/>
 				<div className=''>
 					<ActualityMainPage />
+				</div>
+			</div>
+			<div className=''>
+				<Image
+					src='/titles/small/recomendet.png'
+					alt='ok'
+					width={230}
+					height={20}
+					className='my-7'
+				/>
+				<div className=''>
+					<RecommendetMainPage />
 				</div>
 			</div>
 		</div>

@@ -20,7 +20,7 @@ export const actualityItems: IMainPageItem[] = [
 		img: '/mainPageIcons/actuality/book.png',
 		link: 'about',
 		title:
-			'Обучение иностранных студентов Study of unternational studants Éducation des étudiants étrangers',
+			'Обучение иностранных студентов \n Study of unternational studants \n Éducation des étudiants étrangers',
 		imgHeight: 62,
 		imgWidth: 62,
 	},

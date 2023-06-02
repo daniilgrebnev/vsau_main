@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -7,7 +9,7 @@ const CloseNavbar = () => {
 	const router = usePathname()
 	return (
 		<div className=''>
-			<div className='px-[25px] py-[57px] overflow-hidden flex items-center justify-between'>
+			<div className=' w-[100%] h-[200px] overflow-hidden flex items-center justify-center'>
 				<Image src='/Logo.png' alt='Logo' width={97} height={97} />
 			</div>
 			{navItems.map(item => (
