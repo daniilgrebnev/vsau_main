@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
 	const [openNav, setOpenNav] = useState(false)
 
-	let navWidth: string = openNav ? '9%' : '25%'
+	let navWidth: string = openNav ? '9%' : '30%'
 	let mainWidth: string = (100 - Number(navWidth.slice(0, -1))).toString() + '%'
 
 	return (

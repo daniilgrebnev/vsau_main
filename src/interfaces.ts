@@ -1,7 +1,9 @@
 export interface INavItem {
-	img: string
+	img?: string
 	path: string
 	title: string
+	width?: number
+	height?: number
 }
 
 export interface INews {
