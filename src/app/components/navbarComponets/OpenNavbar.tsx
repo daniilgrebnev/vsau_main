@@ -1,12 +1,15 @@
 'use client'
 
+import { INavItem } from '@/interfaces'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 import { navItems } from './navItems'
 
 const OpenNavbar = () => {
 	const router = usePathname()
+	const [items] = useState<INavItem[]>(navItems)
 	return (
 		<div className=' text-blue'>
 			<div className='m-[57px] w-[80%] h-[97px] flex items-center justify-center '>
@@ -15,7 +18,7 @@ const OpenNavbar = () => {
 				</Link>
 			</div>
 			<ul>
-				{navItems.map(item => (
+				{items.map(item => (
 					<Link href={item.path} className=''>
 						<li className={router == item.path ? 'active' : ''}>
 							<div className='flex items-center justify-start py-3 w-2/3 mx-auto'>

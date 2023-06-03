@@ -1,18 +1,21 @@
 'use client'
 
+import { INavItem } from '@/interfaces'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 import { navItems } from './navItems'
 
 const CloseNavbar = () => {
 	const router = usePathname()
+	const [items] = useState<INavItem[]>(navItems)
 	return (
 		<div className=''>
 			<div className=' w-[100%] h-[200px] overflow-hidden flex items-center justify-center'>
 				<Image src='/Logo.png' alt='Logo' width={97} height={97} />
 			</div>
-			{navItems.map(item => (
+			{items.map(item => (
 				<div className='flex justify-center items-center'>
 					<Link href={item.path} className='w-full '>
 						<ul>
