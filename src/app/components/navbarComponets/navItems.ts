@@ -48,7 +48,7 @@ export const navMiddleItems: INavItem[] = [
 	{
 		img: '/navbar/information.png',
 		path: '/information',
-		title: 'Сведения об образовательной организации',
+		title: 'Сведения об университете',
 	},
 ]
 export const navDownItems: INavItem[] = [

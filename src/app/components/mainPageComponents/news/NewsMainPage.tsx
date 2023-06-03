@@ -13,7 +13,10 @@ const NewsMainPage = () => {
 				<div className=' mr-7 min-w-[320px] bg-white rounded-lg'>
 					<Image src='/newspic.png' alt='#' width={320} height={0} />
 					<div className='p-3'>
-						<Link href='news/#' className='cursor-pointer hover:underline'>
+						<Link
+							href={`news/${item.id}`}
+							className='cursor-pointer hover:underline'
+						>
 							<b>{item.title}</b>
 						</Link>
 						<div className='flex justify-between mt-7'>

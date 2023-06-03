@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import MainArrow from './components/MainArrow'
 import ActualityMainPage from './components/mainPageComponents/actuality/ActualityMainPage'
 import NewsMainPage from './components/mainPageComponents/news/NewsMainPage'
@@ -18,7 +19,7 @@ export default function Home() {
 				/>
 			</div>
 			<div className=''>
-				<div className='flex justify-between items-center w-2/3'>
+				<div className='flex justify-between items-center w-3/4'>
 					<Image
 						src='/titles/small/news.png'
 						alt='ok'
@@ -26,10 +27,13 @@ export default function Home() {
 						height={0}
 						className='my-7'
 					/>
-					<div className='flex items-center '>
-						<p className='text-white mr-2 text-lg'>Все новости</p>
+					<Link
+						href='/news'
+						className='flex items-center hover:underline text-white '
+					>
+						<p className='  pr-2 text-lg'>Все новости</p>
 						<MainArrow fill='white' />
-					</div>
+					</Link>
 				</div>
 				<NewsMainPage />
 			</div>

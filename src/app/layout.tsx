@@ -10,7 +10,7 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode
 }) {
-	const [openNav, setOpenNav] = useState(false)
+	const [openNav, setOpenNav] = useState(true)
 
 	let navWidth: string = openNav ? '9%' : '30%'
 	let mainWidth: string = (100 - Number(navWidth.slice(0, -1))).toString() + '%'

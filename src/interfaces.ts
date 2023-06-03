@@ -7,6 +7,7 @@ export interface INavItem {
 }
 
 export interface INews {
+	id: string
 	title: string
 	date: string
 }
