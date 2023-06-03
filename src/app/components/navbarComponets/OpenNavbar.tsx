@@ -13,7 +13,7 @@ const OpenNavbar = () => {
 	const [midItems] = useState<INavItem[]>(navMiddleItems)
 	const [downItems] = useState<INavItem[]>(navDownItems)
 	return (
-		<div className=' text-blue overflow-y-scroll overflow-x-hidden h-screen pb-5'>
+		<div className=' text-blue overflow-y-scroll whitespace-nowrap overflow-x-hidden h-screen pb-5'>
 			<div className='m-[57px] w-[80%] h-[97px] flex items-center justify-center '>
 				<Link href='/'>
 					<Image src='/Logo.svg' alt='Logo' width={400} height={97} />
@@ -39,7 +39,9 @@ const OpenNavbar = () => {
 								height={item.height || 32}
 							/>
 
-							<p className='text-lg ml-7 leading-5 '>{item.title}</p>
+							<p className='text-lg whitespace-nowrap ml-7 leading-5 '>
+								{item.title}
+							</p>
 						</Link>
 					</li>
 				))}
