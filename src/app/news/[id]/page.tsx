@@ -2,18 +2,18 @@
 
 import { newsItems } from '@/app/components/mainPageComponents/news/newsItems'
 import { INews } from '@/interfaces'
-import { usePathname } from 'next/navigation'
+import { Params } from 'next/dist/shared/lib/router/utils/route-matcher' // TODO: исправить
+import { useParams } from 'next/navigation'
 import { useState } from 'react'
 
 const NewsItemPage = ({}) => {
-	const router = usePathname()
-	console.log(router)
+	const params: Params = useParams()
 
 	const [item] = useState<INews[]>(newsItems)
 
 	return (
 		<div>
-			{router.substring(6)}
+			{params.id}
 			<div className=''></div>
 		</div>
 	)
