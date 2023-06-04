@@ -8,6 +8,7 @@ export interface INavItem {
 
 export interface INews {
 	id: string
+	text?: string
 	title: string
 	date: string
 }
@@ -23,4 +24,15 @@ export interface IMainPageItem {
 	label?: string
 	imgWidth: number
 	imgHeight: number
+}
+
+export interface IManagement {
+	img: string
+	name: string
+	surname: string
+	patronymic: string
+	phoneNumber: string
+	place: string
+	post: string
+	academicStatus: string
 }
