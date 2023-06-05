@@ -14,27 +14,21 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
 				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
 				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],
@@ -52,27 +46,21 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
 				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
 				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],
@@ -90,27 +78,21 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
 				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
 				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],
@@ -128,27 +110,21 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
 				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
 				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],
@@ -166,28 +142,22 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
-				vision: 'Факультет технологии и товароведения',
+				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
-				vision: 'Кафедра товароведения и экспертизы товаров',
+				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],
 	},
@@ -204,27 +174,21 @@ export const managementItems: IManagement[] = [
 		place: '102, главный корпус',
 		ListOfDivisions: [
 			{
-				id: 1,
 				vision: 'Руководство',
 			},
 			{
-				id: 2,
 				vision: 'Ректорат',
 			},
 			{
-				id: 3,
 				vision: 'Ученый совет',
 			},
 			{
-				id: 4,
 				vision: 'Методический совет',
 			},
 			{
-				id: 5,
 				vision: 'факультет технологии и товароведения',
 			},
 			{
-				id: 6,
 				vision: 'кафедра товароведения и экспертизы товаров',
 			},
 		],

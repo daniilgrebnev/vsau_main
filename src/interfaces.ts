@@ -26,7 +26,6 @@ export interface IMainPageItem {
 	imgHeight: number
 }
 export interface IListOfDivisions {
-	id: string
 	vision: string
 }
 export interface IManagement {
