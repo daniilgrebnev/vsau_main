@@ -14,13 +14,21 @@ const CloseNavbar = () => {
 	return (
 		<div className=''>
 			<div className=' w-[100%] h-[200px] overflow-hidden flex items-center justify-center'>
-				<Image src='/Logo.png' alt='Logo' width={97} height={97} />
+				<Link href='/'>
+					<Image src='/Logo.png' alt='Logo' width={97} height={97} />
+				</Link>
 			</div>
 			{items.map(item => (
 				<div className='flex justify-center items-center'>
 					<div className='w-full '>
 						<ul>
-							<li className={router == item.path ? 'active ' : ''}>
+							<li
+								className={
+									router == item.path
+										? 'active hover:bg-[#e3f1fb]'
+										: 'hover:bg-[#e3f1fb]'
+								}
+							>
 								<div className='py-3 flex justify-center items-center'>
 									<Link href={item.path} className=''>
 										<Image

@@ -27,12 +27,14 @@ export interface IMainPageItem {
 }
 
 export interface IManagement {
+	id: string
+	biography: string
 	img: string
 	name: string
 	surname: string
-	patronymic: string
 	phoneNumber: string
 	place: string
 	post: string
 	academicStatus: string
+	ListOfDivisions: object
 }

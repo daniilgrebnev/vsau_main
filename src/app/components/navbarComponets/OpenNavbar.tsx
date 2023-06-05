@@ -30,7 +30,8 @@ const OpenNavbar = () => {
 					>
 						<Link
 							href={item.path}
-							className='flex items-center justify-start py-3 w-2/3 mx-auto '
+							className='grid py-3 w-2/3 mx-auto items-center'
+							style={{ gridTemplateColumns: '10% 90%' }}
 						>
 							<Image
 								src={item.img || ''}
