@@ -11,7 +11,7 @@ const page = () => {
 
 	const [item] = useState<IManagement[]>(managementItems)
 
-	let currentItem = item.findIndex(x => x.id === params.id)
+	const currentItem = item.findIndex(x => x.id === params.id)
 
 	const itemsArray = item[currentItem]
 
