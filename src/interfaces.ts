@@ -38,5 +38,5 @@ export interface IManagement {
 	place: string
 	post: string
 	academicStatus: string
-	ListOfDivisions: IListOfDivisions
+	ListOfDivisions: IListOfDivisions[]
 }
