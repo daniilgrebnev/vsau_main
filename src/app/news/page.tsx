@@ -4,7 +4,7 @@ import { INews } from '@/interfaces'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { newsItems } from '../components/mainPageComponents/news/newsItems'
+import { newsItems } from '../../newsItems'
 
 const News = () => {
 	const [items] = useState<INews[]>(newsItems)

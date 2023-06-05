@@ -1,7 +1,7 @@
 'use client'
 
-import { newsItems } from '@/app/components/mainPageComponents/news/newsItems'
 import { INews } from '@/interfaces'
+import { newsItems } from '@/newsItems'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { useState } from 'react'
@@ -23,7 +23,7 @@ const NewsItemPage = ({}) => {
 					<Image
 						src='/newsCurrent.png'
 						alt=''
-						width={100}
+						width={900}
 						height={100}
 						className='w-full h-full'
 					/>
