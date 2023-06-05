@@ -1,6 +1,6 @@
 'use client'
 
-import { IManagement } from '@/interfaces'
+import { IListOfDivisions, IManagement } from '@/interfaces'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { useState } from 'react'
@@ -11,11 +11,11 @@ const page = () => {
 
 	const [item] = useState<IManagement[]>(managementItems)
 
-	let currentItem: IManagement = item.find(x => x.id === params.id)
+	let currentItem = item.findIndex(x => x.id === params.id)
 
-	console.log(currentItem)
-	let list = currentItem?.ListOfDivisions
-	console.log(list)
+	const itemsArray = item[currentItem]
+
+	let list: IListOfDivisions[] = itemsArray.ListOfDivisions
 
 	return (
 		<div
@@ -23,11 +23,11 @@ const page = () => {
 		'
 		>
 			<div
-				key={currentItem?.id}
+				key={itemsArray.id}
 				className='bg-white flex mr-7 mb-10 rounded-lg text-blue items-center justify-center'
 			>
 				<Image
-					src={currentItem.img}
+					src={itemsArray.img}
 					alt=''
 					width={280}
 					height={0}
@@ -35,17 +35,17 @@ const page = () => {
 				/>
 				<div className='pt-10 px-20 ml-10'>
 					<div className=''>
-						<p className='font-bold text-2xl '>{currentItem?.surname}</p>
-						<p className='text-xl'>{currentItem?.name}</p>
+						<p className='font-bold text-2xl '>{itemsArray.surname}</p>
+						<p className='text-xl'>{itemsArray.name}</p>
 
 						<div className='my-3'>
-							<p className='font-semibold'>{currentItem?.post}</p>
-							<p>{currentItem?.academicStatus}</p>
+							<p className='font-semibold'>{itemsArray.post}</p>
+							<p>{itemsArray.academicStatus}</p>
 						</div>
 						<div className='my-5'>
-							<div className=''>{currentItem?.phoneNumber}</div>
+							<div className=''>{itemsArray.phoneNumber}</div>
 							<div className='my-2'>Написать письмо</div>
-							<div className=''>{currentItem?.place}</div>
+							<div className=''>{itemsArray.place}</div>
 						</div>
 					</div>
 				</div>
@@ -53,7 +53,7 @@ const page = () => {
 
 			<div className='w-[40%] bg-white mr-10 text-blue p-10 rounded-lg'>
 				<h2 className='text-2xl font-bold text blue mb-10 '>Биография</h2>
-				<p>{currentItem.biography}</p>
+				<p>{itemsArray.biography}</p>
 			</div>
 			<div className='w-[45%] bg-white text-blue p-10 mt-10  rounded-lg'>
 				<h2 className='text-2xl font-bold text blue mb-7 '>

@@ -25,9 +25,11 @@ export interface IMainPageItem {
 	imgWidth: number
 	imgHeight: number
 }
-
+export interface IListOfDivisions {
+	vision: string
+}
 export interface IManagement {
-	id: string
+	id: string | undefined
 	biography: string
 	img: string
 	name: string
@@ -36,5 +38,5 @@ export interface IManagement {
 	place: string
 	post: string
 	academicStatus: string
-	ListOfDivisions: object
+	ListOfDivisions: IListOfDivisions
 }
